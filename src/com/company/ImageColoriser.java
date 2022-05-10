@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class ImageColoriser {
     public void redImageColoriser() throws IOException {
-        File file = (new File("./image/tillindeman.bmp"));
+        File file = new File("C:\\Users\\Propietario\\IdeaProjects\\Autoevaluacion\\image\\tillindeman.jpg");
         BufferedImage img = ImageIO.read(file);
 
         for (int x= 0;x<img.getWidth();x++){
@@ -31,7 +31,7 @@ public class ImageColoriser {
             }
         }
 
-        file = new File("./image/tillindemanRed.bmp");
+        file = new File("C:\\Users\\Propietario\\IdeaProjects\\Autoevaluacion\\image\\tillindemanRedd.jpg");
         ImageIO.write(img,"bmp",file);
         System.out.println("Till Lindeman Done...");
     }
